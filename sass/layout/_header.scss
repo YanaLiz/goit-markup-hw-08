@@ -1,0 +1,45 @@
+/* Четвертий паршал */
+
+
+.header-block {
+    @include section;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: var(--white);
+
+}
+.box {
+
+    background-color: var(--black-bg);
+}
+
+.block {
+
+    font-family: "Roboto";
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    width: 696px;
+    margin: 0px auto;
+
+}
+
+.header {
+
+
+    display: flex;
+    display: inline-block;
+    border-bottom: 1px solid var(--grey);
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}

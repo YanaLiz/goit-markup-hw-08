@@ -1,0 +1,25 @@
+/* Другий паршал */
+
+
+body {
+    background-color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--grey-text);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    &.no-scroll {
+    overflow: hidden;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+

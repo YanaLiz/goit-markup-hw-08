@@ -1,0 +1,41 @@
+//  Сьомий паршал
+
+
+
+
+.overliay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(55, 56, 68, 0.4), rgba(55, 56, 68, 0.4)), url(../imeges/fon/Img.jpg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.portfolio-overlay {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform var(--anim-fast),
+    cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    backdrop-filter: blur(5px);
+    background-color: var(--blue);
+
+}
+
+.team-it:hover .portfolio-overlay {
+    transform: translateY(0);
+}
+

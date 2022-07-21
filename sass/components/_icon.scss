@@ -1,0 +1,175 @@
+// П"ятий паршал
+
+
+.modal-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.icon {
+    fill: currentColor;
+    margin-right: 10px;
+    align-items: center;
+}
+
+
+.icon-close {
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+&:hover,
+&:focus {
+    fill: var(--blue);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+}
+
+.modal-icons {
+    fill: var(--black-bg);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transform: var(--anim-fast);
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+&:focus,
+&:focus-visible {
+    fill: var(--blue);
+    transform: var(--anim-fast);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+&:hover,
+&:focus {
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    outline: 2px solid var(--blue);
+    fill: var(--white);
+    background-color: var(--blue);
+}
+
+}
+
+
+.modal-close-button {
+    position: absolute;
+    transform: translate(-25%, 25%);
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border: 4px;
+    outline: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+&:hover+.icon-clos,
+&:focus+.icon-clos {
+    fill: var(--blue);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+&:hover+.icon-close,
+&:focus+.icon-close {
+    fill: var(--blue);
+    transition-property: var(--blue);
+    transition: 250ms;
+    transition: cubik-bezier (0.4, 0, 0.2, 1);
+
+}
+&:hover,
+&:focus+.icon-close {
+    fill: var(--blue);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+&:hover,
+&:focus-within>.icon-close {
+    fill: var(--blue);
+    border-color: var(--blue);
+    transition: var(--anim-fast);
+}
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+.media-list {
+    margin-right: 10px;
+}
+
+
+.sicial-media-icon {
+    transition-property: color,
+        cubic-bezier(0.4, 0, 0.2, 1), background-color;
+    transition-duration: var(--anim-fast);
+    transition-timing-function: ease-in-out;
+
+& {
+    fill: currentColor;
+
+}
+}
+
+
+.sicial-media-linc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--grey-blue);
+    border-radius: 50%;
+    transition: color, background-color, 250ms,
+        cubic-bezier(0.4, 0, 0.2, 1), ease-in-out;
+        transition-property: color, background-color,
+        cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: var(--anim-fast);
+    transition-timing-function: ease-in-out;
+
+&:hover .sicial-media-icon,
+&:focus .sicial-media-icon {
+    fill: var(--white);
+}
+
+&:hover,
+&:focus {
+    fill: var(--white);
+}
+&:hover,
+&:focus {
+    background-color: var(--blue);
+}
+
+}
+
+
+.client-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--grey-blue);
+
+& {
+    fill: currentColor;
+}
+
+}
+
+
+.footer-media-icon {
+    fill: var(--white);
+    transition-property: color, background-color,
+        cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: var(--anim-fast);
+    transition-timing-function: ease-in-out;
+
+}

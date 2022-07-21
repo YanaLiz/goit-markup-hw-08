@@ -1,0 +1,57 @@
+// Дванадцятий паршал
+
+
+
+
+
+.card {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.team-card {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    border-left: 1px solid var(--crem-grey);
+    border-right: 1px solid var(--crem-grey);
+    border-bottom: 1px solid var(--crem-grey);
+}
+
+.team-itt{
+display: inline-block;
+background-color: var(--white);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+&:last-child{
+    margin-right: 0px;
+}
+}
+
+
+
+.team-cardi {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white);
+
+    &:nth-child(-n+4) {
+    margin-left: 0;
+}
+}
+
+.comanda {
+    @include section;
+    background-color: var(--grey-bg);
+}

@@ -1,0 +1,30 @@
+// utils styles
+@import "./utils/vars";
+@import "./utils/visualli-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+// base styles
+@import "./base/common";
+@import "./base/reset";
+@import "./base/backdrop";
+
+//components styles
+@import "./components/buttons";
+@import "./components/modal";
+@import "./components/icon";
+@import "./components/overlay";
+@import "./components/linc";
+@import "./components/footer";
+@import "./components/card-set";
+@import "./components/portfolio";
+@import "./components/form";
+@import "./components/tasks";
+@import "./components/section";
+@import "./components/container";
+@import "./components/title";
+@import "./components/logo";
+
+// layout styles
+@import "./layout/header";
+
