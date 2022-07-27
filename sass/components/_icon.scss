@@ -70,32 +70,21 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
-&:hover+.icon-clos,
-&:focus+.icon-clos {
-    fill: var(--blue);
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 
-&:hover+.icon-close,
-&:focus+.icon-close {
-    fill: var(--blue);
-    transition-property: var(--blue);
-    transition: 250ms;
-    transition: cubik-bezier (0.4, 0, 0.2, 1);
-
-}
-&:hover,
-&:focus+.icon-close {
-    fill: var(--blue);
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 &:hover,
 &:focus-within>.icon-close {
-    fill: var(--blue);
+    color: var(--blue);
     border-color: var(--blue);
     transition: var(--anim-fast);
 }
+// &:hover .icon-close {
+//     fill: var(--blue);
+//     border-color: var(--blue);
+//         transition: var(--anim-fast);
+// }
 }
+
+
 
 .media {
     display: flex;

@@ -26,8 +26,61 @@
 
 
 
-<body data-body>
+<body data-body class="">
+    <!-- Header +  -->
+    <header class="mobile-header ">
+        <div class="container-menu is-hidden" >
+            <a class="mobile-menu-logo" href="index.html"><span>Web</span>Studio</a>
+            <button class="mobile-button-menu" type="button" aria-label="мобильное меню" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
+                <use class="mobile-menu-burger" xlink:href="./imeges/icons.svg#icon-menu-burger"></use>
+                <use class="mobile-menu-close" xlink:href="./imeges/icons.svg#icon-close"></use>
+            </svg>
+            </button>
+    <!-- Mobile menu -->
     
+
+    <div class="mobile-menu backdrop" data-menu >
+        <ul class="mobile-menu-list-a">
+            <li class="mobile-menu list">
+                <a class="mobile-menu-nav-link current header-link" href="index.html">Студия</a>
+            </li>
+            <li class="mobile-menu list">
+                <a class="mobile-menu-nav-link header-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu list">
+                <a class="mobile-menu-nav-link header-link" href="contakt">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu-contacts header-nav">
+            <li class="list-contact list">
+                <a class="mobile-menu-contacts-link phone" href="tel:+380961111111" aria-label="телефон">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-list-contact list">
+                <a class="mobile-menu-contact-link" href="mailto:info@devstudio.com" aria-label="почта">info@devstudio.com</a>
+            </li>
+            
+        </ul>
+        <ul class="mobile-menu-socials">
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Instagram">Instagram</a>
+            </li>
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Twitter">Twitter</a>
+            </li>
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Facebook">Facebook</a>
+            </li>
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="LinkedIn">Linkedin</a>
+            </li>
+        </ul>
+    </div>
+        </div>
+
+    </header>
+
+
     <header class="header">
             <div class="container top">
             <nav class="navilist">
@@ -44,7 +97,7 @@
                     </li>
                 </ul>
         </nav> 
-        <ul class="nav">
+        <ul class="header-nav">
             <li class="list-contact list"><a class="contact-link" href="mailto:info@devstudio.com" aria-label="почта"><svg class="icon" width="16" height="12">
                 <use xlink:href="./imeges/icons.svg#icon-emeill"></use>
             </svg>info@devstudio.com</a>
@@ -63,12 +116,10 @@
                 <h1 class="block">
                 Эффективные решения для вашего бизнеса
             </h1>
-            <!-- <h1 class="block animate__animated animate__hinge"> 
-                Эффективные решения для вашего бизнеса
-            </h1> -->
+            
             <button  class="header-button animate__animated animate__lightSpeedInRight" type="button" data-modal-open="">Заказать услугу</button>
 
-<!--Modal window-->
+
 
     <div class="backdrop is-hidden" data-modal="">
     
@@ -78,7 +129,7 @@
                 <use xlink:href="./imeges/icons.svg#icon-close"></use>
             </svg></button>
 
-            <!-- Form -->
+            
 
         <div class="form-modal">
         <strong class="strong"><span class="span-text">Оставьте свои данные, мы вам перезвоним</span></strong>
@@ -221,22 +272,49 @@
             <h2 class="about">Чем мы занимаемся</h2>
             <ul class="program__list">
                 <li class="program__link">
-                    <a href="./imeges/img1.jpg"><img src="./imeges/img1.jpg" alt="клавиатура" width="370"
-                            height="294" /></a>
+                    <a href="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-0_result.jpg">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-0_result.jpg 1x, ./imeges/retina-deksctop/webstudio-desk/projekt/img-l-@2x-0_result.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img src="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-0_result.jpg"
+                        alt="клавиатура" width="370"
+                        height="294" />
+                        </picture>
+                        </a>
                     <div class="program__card label">
                         <p class="program__meta">Десктопные приложения</p>
                     </div>        
                 </li>
                 <li class="program__link">
-                    <a href="./imeges/img2(1).jpg"><img src="./imeges/img2(1).jpg" alt="планшет" width="370"
-                            height="294" /></a>
+                    <a href="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-1_result.jpg">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-1_result.jpg 1x, ./imeges/retina-deksctop/webstudio-desk/projekt/img-l-@2x-1_result.jpg 2x" 
+                            type="image/jpg"
+                            />
+                        <img  src="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-1_result.jpg" 
+                        alt="планшет" width="370"
+                        height="294" />
+                        </picture>
+                        </a>
                         <div class="program__card label">
                             <p class="program__meta">Мобильные приложения</p>
                         </div>
                 </li>
                 <li class="program__link">
-                    <a href="./imeges/img3.jpg"><img src="./imeges/img3.jpg" alt="телефон" width="370"
-                            height="294" /></a>
+                    <a href="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-2_result.jpg">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-2_result.jpg 1x, ./imeges/retina-deksctop/webstudio-desk/projekt/img-l-@2x-2_result.jpg 2x" 
+                            type="image/jpg"
+                            />
+                        <img src="./imeges/retina-deksctop/webstudio-desk/projekt/img-l-2_result.jpg" 
+                        alt="телефон" width="370"
+                        height="294" />
+                        </picture>
+                        </a>
                         <div class="program__card label">
                             <p class="program__meta">Дизайнерские решения</p>
                         </div>
@@ -251,7 +329,26 @@
                     <h2 class="about">Наша команда</h2>
                     <ul class="card">
                         <li class="team-itt">
-                    <img src="./imeges/img4(1).jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-0.jpg 1x,
+                            ./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-@2x-0.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/webstudio-tabl/comanda/img-m-0.jpg 1x,
+                            ./imeges/retina-tabl/webstudio-tabl/comanda/img-m@2x-0.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/webstudio-mob/comanda/img-s-0.jpg 1x,
+                            ./imeges/retina-mob/webstudio-mob/comanda/img-s-@2x-0.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img src="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-0.jpg" 
+                    alt="Игорь Демьяненко" width="450" height="460" />
+                        </picture>
+                    
                     <div class="team-cardi">
                         <h3 class="title">Игорь Демьяненко</h3>
                     <p class="title-title" lang="en">Product Designer</p>
@@ -304,7 +401,26 @@
                     </div>
                         </li>
                         <li class="team-itt">
-                        <img src="./imeges/img5(1).jpg" alt="Ольга Репина" width="270" height="260" />    
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-1.jpg 1x,
+                            ./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-@2x-1.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/webstudio-tabl/comanda/img-m-1.jpg 1x,
+                            ./imeges/retina-tabl/webstudio-tabl/comanda/img-m@2x-1.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/webstudio-mob/comanda/img-s-1.jpg 1x,
+                            ./imeges/retina-mob/webstudio-mob/comanda/img-s-@2x-1.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img src="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-1.jpg" 
+                            alt="Ольга Репина" width="450" height="460" />
+                        </picture>
+                            
                     <div class="team-cardi">
                     <h3 class="title">Ольга Репина</h3>
                     <p class="title-title" lang="en">Frontend Developer</p>
@@ -357,7 +473,26 @@
                     </div>
                         </li>
                         <li class="team-itt">
-                    <img src="./imeges/img6(1).jpg" alt="Николай Тарасов" width="270" height="260" />
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-2.jpg 1x,
+                            ./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-@2x-2.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/webstudio-tabl/comanda/img-m-2.jpg 1x,
+                            ./imeges/retina-tabl/webstudio-tabl/comanda/img-m@2x-2.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/webstudio-mob/comanda/img-s-2.jpg 1x,
+                            ./imeges/retina-mob/webstudio-mob/comanda/img-s-@2x-2.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img src="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-2.jpg" 
+                            alt="Николай Тарасов" width="450" height="460" />
+                        </picture>
+                    
                     <div class="team-cardi">
                         <h3 class="title">Николай Тарасов</h3>
                     <p class="title-title" lang="en">Marketing</p>
@@ -410,7 +545,26 @@
                 </div>
                         </li>
                         <li class="team-itt">
-                    <img src="./imeges/img7(1).jpg" alt="Михаил Ермаков" width="270" height="260" />
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-3.jpg 1x,
+                            ./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-@2x-3.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/webstudio-tabl/comanda/img-m-3.jpg 1x,
+                            ./imeges/retina-tabl/webstudio-tabl/comanda/img-m@2x-3.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/webstudio-mob/comanda/img-s-3.jpg 1x,
+                            ./imeges/retina-mob/webstudio-mob/comanda/img-s-@2x-3.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img src="./imeges/retina-deksctop/webstudio-desk/comanda/comanda-l-3.jpg" 
+                            alt="Михаил Ермаков" width="450" height="460" />
+                            </picture>
+                    
                     <div class="team-cardi">
                         <h3 class="title">Михаил Ермаков</h3>
                     <p class="title-title" lang="en">UI Designer</p>
@@ -448,7 +602,7 @@
                         </li>
                     </ul>
                 
-            </div>
+            </div> 
             
         </section>
         <section class="regular">
@@ -521,7 +675,7 @@
                 <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
         
         <address class="foott">
-            <ul>
+            <ul class="footer-list">
                 <li class="addres"><a class="footer-addres foot" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
                         rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
                 <li class="addres">
@@ -567,7 +721,7 @@
         </ul>
             </div>
         <div class="e-mail-input">
-        <form>
+        <form class="footer-form">
             <strong>
             <span class="span">Подпишитесь на рассылку</span> 
         </strong>
@@ -593,6 +747,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

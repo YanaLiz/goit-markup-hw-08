@@ -1,0 +1,237 @@
+// Модальне меню
+
+
+
+
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+}
+.mobile-menu-logo{
+    padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 15px;
+        font-weight: 700;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            color: var(--black-text);
+}
+.mobile-header{
+    width: 450px;
+    
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile-button-menu {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.mobile-menu-icon.is-open.mobile-menu-close{
+    fill: var(--grey-text);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border-color: var(--blue);
+        
+}
+.mobile-menu-burger {
+    cursor: pointer;
+    width: 24px;
+    height: 16px;
+    &:focus{
+        fill: var(--blue);
+    }
+    .mobile-button-menu.is-open & {
+        opacity: 0;
+    }
+
+}
+
+
+
+.mobile-menu-close{
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-menu-icon:focus,
+.mobile-menu-icon:focus-visible{
+    fill: var(--blue);
+}
+
+.mobile-menu-close {
+    opacity: 0;
+
+    .mobile-button-menu.is-open & {
+        opacity: 1;
+        
+        outline: 1px solid var(--grey-text);
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+.mobile-menu.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    width: 480px;
+    height: 796px;
+    padding: 40px;
+    background-color: var(--white);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-open {
+        transform: translateX(0%);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu-list-a {
+    margin-bottom: auto;
+
+}
+
+
+.mobile-menu-nav-link.current.header-link {
+        font-size: 40px;
+        color: var(--blue);
+    }
+
+
+.mobile-menu.list {
+    position: relative;
+        align-items: center;
+        margin-right: 50px;
+        margin-top: 48px;
+        margin-bottom: 32px;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-menu-nav-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--black-text);
+}
+
+.phone{
+    width: 231px;
+        height: 28px;
+        left: 40px;
+        top: 634px;
+    font-family: Roboto;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        text-align: left;
+}
+.list-contact{
+    margin-bottom: 32px;
+}
+
+
+.mobile-menu-contacts-link{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        
+        color: var(--blue);
+}
+.mobile-menu-contact-link{
+height: 40px;
+    width: 296px;
+    left: 40px;
+    top: 562px;
+
+    color: var(--blue);
+}
+
+.mobile-menu-contacts.header-nav {
+    display: block;
+    flex-direction: column;
+        align-items: flex-start;
+        
+        
+    margin-bottom: 64px;
+}
+
+.mobile-menu-list-contact {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+.mobile-menu-list-contact{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: var(--grey-text);
+}
+.mobile-menu-contact-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--grey-text);
+
+}
+
+
+
+.mobile-menu-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mobile-menu-sotials-items {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22px;
+    letter-spacing: 0.02em;
+    color: var(--blue);
+}
+
+.mobile-menu-sotials-list:not(:last-child) .mobile-menu-socials-link {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    ;
+}

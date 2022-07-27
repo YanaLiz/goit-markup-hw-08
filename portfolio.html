@@ -20,7 +20,60 @@
 
 </head>
 
-<body>
+<body data-body>
+    <!-- Header +  -->
+    <header class="mobile-header">
+        <div class="container-menu is-hidden" >
+            <a class="mobile-menu-logo" href="index.html"><span>Web</span>Studio</a>
+            <button class="mobile-button-menu" type="button" aria-label="мобильное меню" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
+                <use class="mobile-menu-burger" xlink:href="./imeges/icons.svg#icon-menu-burger"></use>
+                <use class="mobile-menu-close" xlink:href="./imeges/icons.svg#icon-close"></use>
+            </svg>
+            </button>
+    <!-- Mobile menu -->
+    
+
+    <div class="mobile-menu backdrop" data-menu >
+        <ul class="mobile-menu-list-a">
+            <li class="mobile-menu list">
+                <a class="mobile-menu-nav-link header-link" href="index.html">Студия</a>
+            </li>
+            <li class="mobile-menu list">
+                <a class="mobile-menu-nav-link current header-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu list">
+                <a class="mobile-menu-nav-link header-link" href="contakt">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu-contacts header-nav">
+            <li class="list-contact list">
+                <a class="mobile-menu-contact-link phone" href="tel:+380961111111" aria-label="телефон">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-list-contact list">
+                <a class="mobile-menu-contact-link" href="mailto:info@devstudio.com" aria-label="почта">info@devstudio.com</a>
+            </li>
+            
+        </ul>
+        <ul class="mobile-menu-socials">
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Instagram">Instagram</a>
+            </li>
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Twitter">Twitter</a>
+            </li>
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Facebook">Facebook</a>
+            </li>
+            <li class="mobile-menu-sotials-list">
+                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="LinkedIn">Linkedin</a>
+            </li>
+        </ul>
+    </div>
+        </div>
+
+    </header>
+
     <header class="header">
         <div class="container top">
             <nav class="navilist">
@@ -31,7 +84,7 @@
                     <li class="list"><a class="header-link" href="contakt">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="nav">
+            <ul class="header-nav">
                 <li class="list-contact list"><a class="contact-link" href="mailto:info@devstudio.com"><svg class="icon"
                             width="16" height="12">
                             <use xlink:href="./imeges/icons.svg#icon-emeill"></use>
@@ -72,7 +125,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt1.jpg" alt="Екран ноутбука" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--0.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-0.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-0.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-0.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-0.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-0.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--0.jpg" 
+                            alt="Екран ноутбука" width="450" height="294">
+                        </picture>
+                            
                     <div class="portfolio-overlay">
                         <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -89,7 +161,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt2.jpg" alt="Игра в мяч" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--1.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-1.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-1.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-1.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-1.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-1.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--1.jpg" 
+                            alt="Игра в мяч" width="450" height="294">
+                        </picture>
+                            
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -107,7 +198,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt3.jpg" alt="Реклама" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--2.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-2.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-2.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-2.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-2.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s@-2x-2.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--2.jpg" 
+                            alt="Реклама" width="450" height="294">
+                        </picture>
+                            
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -125,7 +235,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt4.jpg" alt="Наушники" width="370" height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--3.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-3.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-3.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-3.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-3.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-3.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--3.jpg" 
+                            alt="Наушники" width="450" height="294">
+                            </picture>
+                            
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -143,7 +272,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                        <img class="imeges" src="./imeges/imeges1/proekt5.jpg" alt="Коробки" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--4.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-4.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-4.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-4.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-4.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-4.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--4.jpg" 
+                            alt="Коробки" width="450" height="294">
+                        </picture>
+                        
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -161,7 +309,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt6.jpg" alt="Монитор" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--5.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-5.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-5.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-5.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-5.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-5.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--5.jpg" 
+                            alt="Монитор" width="450" height="294">
+                        </picture>
+                            
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -179,7 +346,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt7.jpg" alt="Книга" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--6.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-6.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-6.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-6.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-6.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-6.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--6.jpg" 
+                            alt="Книга" width="450" height="294">
+                        </picture>
+                            
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -197,7 +383,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt8.jpg" alt="Бирка" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--7.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-7.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-7.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-7.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-7.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-7.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--7.jpg" 
+                            alt="Бирка" width="450" height="294">
+                        </picture>
+                            
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -215,7 +420,26 @@
                 <li class="team-it card-set-items">
                     <a class="picture" href="">
                         <div class="thumb">
-                            <img class="imeges" src="./imeges/imeges1/proekt9.jpg" alt="Ноутбук" width="370" height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--8.jpg 1x,
+                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-8.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(min-width: 768px)"
+                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-8.jpg 1x,
+                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-8.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <source media="(max-width: 767px)"
+                            srcset="./imeges/retina-mob/portfolio-mob/img-s-8.jpg 1x,
+                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-8.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--8.jpg" 
+                            alt="Ноутбук" width="450" height="294">
+                            </picture>
+                            
                         <div class="portfolio-overlay">
                             <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -242,7 +466,7 @@
                 <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
     
                 <address class="foott">
-                    <ul>
+                    <ul class="footer-list">
                         <li class="addres"><a class="footer-addres foot" href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
                                 target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
                         <li class="addres">
@@ -288,7 +512,7 @@
                 </ul>
             </div>
             <div class="e-mail-input">
-                <form>
+                <form class="footer-form">
                     <strong>
                         <span class="span">Подпишитесь на рассылку</span>
                     </strong>
@@ -308,6 +532,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

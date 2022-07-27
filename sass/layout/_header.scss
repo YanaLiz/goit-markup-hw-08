@@ -3,10 +3,25 @@
 
 .header-block {
     @include section;
+    
+    color: var(--white);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 480px;
+    @media screen and (min-width: 768px){
+    @include section;
+    width: 100%;
+    padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    @media screen and (min-width: 1200px){
+        @include section;
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    color: var(--white);
+    }
+    
 
 }
 .box {
@@ -20,26 +35,46 @@
     font-style: normal;
     text-align: center;
     font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 360px;
+    margin-left: auto;
+        margin-right: auto;
+
+    @media screen and (min-width: 768px){
+        
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+    
+    }
+
+    @media screen and (min-width: 1200px){
+    
     font-size: 44px;
     line-height: 1.36;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
     width: 696px;
     margin: 0px auto;
+    }
+
+    
 
 }
 
 .header {
 
 
+    @media screen and (min-width: 768px){
+border-bottom: 1px solid var(--grey);
+    }
+
+    @media screen and (min-width: 1200px){
     display: flex;
     display: inline-block;
-    border-bottom: 1px solid var(--grey);
-
-    padding-top: 24px;
-    padding-bottom: 25px;
-
     display: flex;
     align-items: center;
     font-weight: 500;
+}
+
+    
 }

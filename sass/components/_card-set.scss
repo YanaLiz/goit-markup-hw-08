@@ -5,20 +5,60 @@
 
 
 .card {
+    flex-basis:content;
+    max-width: max-content;
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    justify-content: center;
+    @media screen and (min-width: 768px){
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: row;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+}
+
+.card-set-items{
+    width: 450px;
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+        @media screen and (min-width: 1200px){
+        width: 370px;
+        }
 }
 
 .card-set {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+    @media screen and (min-width: 768px){
+        width: 768px;
+    
+    }
+    @media screen and (min-width: 1200px){
+        width: 1200px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 
 .team-card {
+    @media screen and (min-width: 768px){
+
+    }
+        @media screen and (min-width: 1200px){
+
+        }
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 24px;
@@ -28,30 +68,64 @@
 }
 
 .team-itt{
-display: inline-block;
-background-color: var(--white);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    width: 450px;
+    
+    display: inline-block;
+    background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+    @media screen and (min-width: 768px){
+        width: 354px;
+        
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
 
-&:last-child{
+    @media screen and (min-width: 1200px){
+        width: 270px;
+    &:last-child{
     margin-right: 0px;
 }
+    }
+
+
+
 }
 
 
 
 .team-cardi {
+    
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white);
-
+    
+    @media screen and (min-width: 768px){
+        &:nth-child(-n+2) {
+            margin-left: 0;
+        }
+    }
+    @media screen and (min-width: 1200px){
     &:nth-child(-n+4) {
     margin-left: 0;
-}
+    }
+    }
+    
 }
 
 .comanda {
     @include section;
     background-color: var(--grey-bg);
-}
+    width: 450px;
+    @media screen and (min-width: 768px){
+        min-width: 768px;
+    } 
+    @media screen and (min-width: 1200px){
+        min-width: 100%;
+    }
+    }
+    
+

@@ -4,6 +4,13 @@
 
 .portfolio{
     @include section;
+    width: 450px;
+    @media screen and (min-width: 768px){
+        width: 768px;
+    }
+        @media screen and (min-width: 1200px){
+            width: 100%;
+        }
 }
 .portfolio-desc {
 
@@ -65,10 +72,18 @@
 
 .group {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 768px){
+        justify-content: center;
+    }
+        @media screen and (min-width: 1200px){
+
+    
     margin-right: 8px;
     margin-bottom: 50px;
+        }
+    
 
 }
 
