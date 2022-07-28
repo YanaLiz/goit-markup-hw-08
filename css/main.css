@@ -434,6 +434,7 @@ address {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .modal-close-button:hover, .modal-close-button:focus-within > .icon-close {
+  fill: var(--blue);
   color: var(--blue);
   border-color: var(--blue);
   -webkit-transition: var(--anim-fast);
@@ -2118,6 +2119,7 @@ address {
 
 .mobile-header {
   width: 450px;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .mobile-header {
@@ -2133,6 +2135,9 @@ address {
   top: 0;
   right: 0;
   z-index: 100;
+}
+.mobile-button-menu:hover, .mobile-button-menu:focus {
+  fill: var(--blue);
 }
 @media screen and (min-width: 768px) {
   .mobile-button-menu {
@@ -2160,7 +2165,7 @@ address {
   opacity: 0;
 }
 
-.mobile-menu-close {
+.mobile-menu-icon.mobile-menu-close {
   width: 40px;
   height: 40px;
 }
@@ -2258,6 +2263,11 @@ address {
 
 .list-contact {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .list-contact {
+    margin-bottom: auto;
+  }
 }
 
 .mobile-menu-contacts-link {

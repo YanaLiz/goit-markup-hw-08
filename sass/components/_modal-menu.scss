@@ -25,7 +25,7 @@
 }
 .mobile-header{
     width: 450px;
-    
+    height: 100%;
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -39,6 +39,10 @@
     top: 0;
     right: 0;
     z-index: 100;
+    &:hover,
+    &:focus{
+        fill: var(--blue);
+    }
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -67,7 +71,7 @@
 
 
 
-.mobile-menu-close{
+.mobile-menu-icon.mobile-menu-close{
     width: 40px;
     height: 40px;
 }
@@ -158,6 +162,9 @@
 }
 .list-contact{
     margin-bottom: 32px;
+    @media screen and (min-width:768px){
+        margin-bottom: auto;
+    }
 }
 
 
