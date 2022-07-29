@@ -30,7 +30,9 @@
 
 
 .picture {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background: var(--white);
     border-bottom: 1px solid var(--crem);
     transition-property: color, box-shadow, background-color,

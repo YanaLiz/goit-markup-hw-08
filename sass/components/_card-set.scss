@@ -53,14 +53,16 @@
 
 
 .team-card {
-    @media screen and (min-width: 768px){
 
+    @media screen and (min-width: 768px){
+    flex-grow: 1;
     }
         @media screen and (min-width: 1200px){
 
         }
     padding-top: 20px;
     padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 24px;
     border-left: 1px solid var(--crem-grey);
     border-right: 1px solid var(--crem-grey);
@@ -119,7 +121,7 @@
 .comanda {
     @include section;
     background-color: var(--grey-bg);
-    width: 450px;
+    width: 100%;
     @media screen and (min-width: 768px){
         min-width: 768px;
     } 
