@@ -4,9 +4,12 @@
 
 
 .tasks{
-    
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 480px;
+
 
         &__text.about-list {
                 font-family: "Roboto";
@@ -17,6 +20,7 @@
             }
 
     @media screen and (min-width: 768px) {
+        width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -27,10 +31,18 @@
             @include section;
     }
 } 
+.tasks-about{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
     
 .tasks__detali.about-text {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
         flex-basis: 100%;
 
     @media screen and (min-width: 768px) {
@@ -42,7 +54,7 @@
     @media screen and (min-width: 1200px){
         flex-wrap: nowrap;
         align-content: stretch;
-        justify-content: space-evenly;
+    
     }
 
         

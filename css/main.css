@@ -770,7 +770,7 @@ address {
 }
 
 .footer {
-  width: 480px;
+  min-width: 480px;
   background-color: var(--black-bg);
   margin-left: auto;
   margin-right: auto;
@@ -1201,7 +1201,9 @@ address {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 450px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .portfolio {
@@ -1584,8 +1586,11 @@ address {
 }
 
 .tasks {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 480px;
 }
 .tasks__text.about-list {
   font-family: "Roboto";
@@ -1596,6 +1601,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .tasks {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1609,12 +1615,23 @@ address {
   }
 }
 
+.tasks-about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .tasks__detali.about-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -1631,9 +1648,6 @@ address {
         flex-wrap: nowrap;
     -ms-flex-line-pack: stretch;
         align-content: stretch;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
 }
 
@@ -1771,6 +1785,8 @@ address {
 
 .comanda {
   width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -1800,6 +1816,8 @@ address {
 .regular {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
@@ -1850,6 +1868,8 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
   gap: 30px;
   width: 450px;
 }
@@ -1898,6 +1918,8 @@ address {
 
 .about {
   width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -2150,6 +2172,8 @@ address {
   width: 450px;
   height: 100%;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .mobile-header {
