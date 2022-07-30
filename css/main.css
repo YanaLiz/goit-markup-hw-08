@@ -770,7 +770,6 @@ address {
 }
 
 .footer {
-  min-width: 480px;
   background-color: var(--black-bg);
   margin-left: auto;
   margin-right: auto;
@@ -840,6 +839,7 @@ address {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -854,22 +854,28 @@ address {
   text-transform: uppercase;
 }
 .fot-btn {
+  width: 200px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
+  color: var(--white);
   background-color: var(--blue);
   border-radius: 4px;
   border-color: var(--blue);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .contakt-link {
@@ -878,7 +884,8 @@ address {
 }
 
 .input-footer {
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   -webkit-box-sizing: border-box;
@@ -888,12 +895,6 @@ address {
   background-color: var(--black-bg);
   padding-left: 16px;
   color: var(--white);
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .input-footer {
-    margin-bottom: auto;
-  }
 }
 
 .fot-icon {
@@ -922,28 +923,6 @@ address {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-}
-
-.bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .bg {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -1006,12 +985,19 @@ address {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  margin-top: 20px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
   }
 }
 
@@ -1026,6 +1012,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .e-mail-input {
@@ -1036,11 +1023,11 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .e-mail-input {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     margin-left: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 570px;
   }
 }
 
@@ -1084,9 +1071,6 @@ address {
   }
 }
 
-.card-set-items {
-  width: 450px;
-}
 @media screen and (min-width: 768px) {
   .card-set-items {
     width: 354px;
@@ -1099,7 +1083,6 @@ address {
 }
 
 .card-set {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1107,14 +1090,8 @@ address {
       flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (min-width: 768px) {
-  .card-set {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .card-set {
-    width: 1200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1140,7 +1117,6 @@ address {
   }
 }
 .team-itt {
-  width: 450px;
   display: inline-block;
   background-color: var(--white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1201,7 +1177,6 @@ address {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1222,6 +1197,11 @@ address {
   color: var(--white);
   margin-left: 24px;
   margin-right: 24px;
+}
+@media screen and (max-width: 479px) {
+  .portfolio-desc {
+    font-size: 14px;
+  }
 }
 
 .thumb {
@@ -1590,7 +1570,6 @@ address {
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 480px;
 }
 .tasks__text.about-list {
   font-family: "Roboto";
@@ -1655,7 +1634,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 450px;
   margin-bottom: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1699,7 +1677,6 @@ address {
           align-items: center;
   margin-bottom: 30px;
   border-radius: 4px;
-  width: 450px;
   height: 120px;
   background-color: var(--grey-bg);
 }
@@ -1784,7 +1761,6 @@ address {
 }
 
 .comanda {
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1798,8 +1774,7 @@ address {
 }
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
-    max-width: 767px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1871,7 +1846,9 @@ address {
   margin-left: auto;
   margin-right: auto;
   gap: 30px;
-  width: 450px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .regular__items.client-items {
@@ -1917,7 +1894,6 @@ address {
 }
 
 .about {
-  width: 450px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto";
@@ -1987,11 +1963,11 @@ address {
 
 .logo {
   display: none;
+  font-family: "Raleway";
 }
 @media screen and (min-width: 768px) {
   .logo {
     display: block;
-    font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     margin-right: 88px;
@@ -2070,15 +2046,6 @@ address {
 @media screen and (min-width: 768px) {
   .header-nav {
     display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-left: 84px;
-    margin-left: 84px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2093,6 +2060,7 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 50px;
   }
 }
 
@@ -2157,6 +2125,7 @@ address {
 }
 
 .mobile-menu-logo {
+  font-family: "Raleway";
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 15px;
@@ -2169,7 +2138,7 @@ address {
 }
 
 .mobile-header {
-  width: 450px;
+  width: 100%;
   height: 100%;
   position: relative;
   margin-left: auto;
@@ -2275,12 +2244,24 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin-bottom: auto;
 }
 
 .mobile-menu-nav-link.current.header-link {
-  font-size: 40px;
   color: var(--blue);
+}
+
+.mobile-menu-nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--black-text);
+  padding-top: 48px;
+  padding-bottom: 32px;
+  margin-bottom: auto;
 }
 
 .mobile-menu.list {
@@ -2295,27 +2276,11 @@ address {
   margin-bottom: 32px;
 }
 
-.mobile-menu-nav-link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--black-text);
-  padding-top: 48px;
-  padding-bottom: 32px;
-  margin-bottom: auto;
-}
-
 .phone {
   width: 231px;
   height: 28px;
   left: 40px;
   top: 634px;
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 0.02em;
   text-align: left;
 }
 
@@ -2325,6 +2290,7 @@ address {
 @media screen and (min-width: 768px) {
   .list-contact {
     margin-bottom: auto;
+    margin-right: 0;
   }
 }
 
@@ -2335,14 +2301,6 @@ address {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--blue);
-}
-
-.mobile-menu-contact-link {
-  height: 40px;
-  width: 296px;
-  left: 40px;
-  top: 562px;
   color: var(--blue);
 }
 
@@ -2368,7 +2326,7 @@ address {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--grey-text);
 }
@@ -2416,7 +2374,6 @@ address {
   color: var(--white);
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .header-block {
@@ -2448,7 +2405,6 @@ address {
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
 }

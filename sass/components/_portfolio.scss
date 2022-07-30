@@ -1,100 +1,90 @@
 // Тринадцятий паршал
 
+.portfolio {
+  @include section;
 
-
-.portfolio{
-    @include section;
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: 768px){
-        width: 768px;
-    }
-        @media screen and (min-width: 1200px){
-            width: 100%;
-        }
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 .portfolio-desc {
-
-    font-size: 18px;
-    line-height: 1.55;
-    color: var(--white);
-    margin-left: 24px;
-    margin-right: 24px;
-
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+  }
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--white);
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .thumb {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-
-
 .picture {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: var(--white);
-    border-bottom: 1px solid var(--crem);
-    transition-property: color, box-shadow, background-color,
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--white);
+  border-bottom: 1px solid var(--crem);
+  transition-property: color, box-shadow, background-color,
     cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--anim-fast);
-    transition-timing-function: ease-in-out;
+  transition-duration: var(--anim-fast);
+  transition-timing-function: ease-in-out;
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .portfolio-list {
-    font-family: "Roboto";
-    position: absolute;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  font-family: "Roboto";
+  position: absolute;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .portfolio-title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 
-    margin-bottom: 4px;
-    letter-spacing: 0.06em;
-    color: var(--black-text);
+  margin-bottom: 4px;
+  letter-spacing: 0.06em;
+  color: var(--black-text);
 }
-
-
 
 .group {
-    display: flex;
-    flex-wrap: wrap;
-    
-    @media screen and (min-width: 768px){
-        justify-content: center;
-    }
-        @media screen and (min-width: 1200px){
+  display: flex;
+  flex-wrap: wrap;
 
-    
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
     margin-right: 8px;
     margin-bottom: 50px;
-        }
-    
-
+  }
 }
 
-
 .teksting {
-    font-size: 16px;
-    font-weight: 1.87;
-    color: var(--grey-text);
-
+  font-size: 16px;
+  font-weight: 1.87;
+  color: var(--grey-text);
 }

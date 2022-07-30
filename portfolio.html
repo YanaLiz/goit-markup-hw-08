@@ -1,538 +1,608 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOIT-MARKUP-HW-03</title>
     <!--Шрифти-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!--normalize styles start-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <!--normalize styles end-->
     <!--Стили файла index.html-->
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
 
-</head>
-
-
-<body data-body="">
+  <body data-body="">
     <!-- Header +  -->
-    <header class="mobile-header ">
-        <div class="container-menu is-hidden" >
-            <a class="mobile-menu-logo" href="index.html"><span>Web</span>Studio</a>
-            <button class="mobile-button-menu" type="button" aria-label="мобильное меню" data-menu-button>
-            <svg class="mobile-menu-icon" width="24" height="16">
-                <use class="mobile-menu-burger" xlink:href="./imeges/icons.svg#icon-menu-burger"></use>
-                <use class="mobile-menu-icon-close_24px" xlink:href="./imeges/icons.svg#icon-close_24px"></use>
-            </svg>
-            </button>
-    <!-- Mobile menu -->
-    
-        <div  class="mobile backdrop " data-menu >
-        <ul class="mobile-menu-list-a">
+    <header class="mobile-header">
+      <div class="container-menu is-hidden">
+        <a class="mobile-menu-logo" href="index.html"><span>Web</span>Studio</a>
+        <button class="mobile-button-menu"
+          type="button"
+          aria-label="мобильное меню"
+          data-menu-button>
+          <svg class="mobile-menu-icon" width="24" height="16">
+            <use class="mobile-menu-burger" xlink:href="./imeges/icons.svg#icon-menu-burger"></use>
+            <use class="mobile-menu-icon-close_24px" xlink:href="./imeges/icons.svg#icon-close_24px"></use>
+          </svg>
+        </button>
+        <!-- Mobile menu -->
+
+        <div class="mobile backdrop" data-menu>
+          <ul class="mobile-menu-list-a">
             <li class="mobile-menu list">
-                <a class="mobile-menu-nav-link current header-link" href="index.html">Студия</a>
+              <a class="mobile-menu-nav-link header-link" href="index.html">Студия</a>
             </li>
             <li class="mobile-menu list">
-                <a class="mobile-menu-nav-link header-link" href="portfolio.html">Портфолио</a>
+              <a class="mobile-menu-nav-link current header-link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="mobile-menu list">
-                <a class="mobile-menu-nav-link header-link" href="contakt">Контакты</a>
+              <a class="mobile-menu-nav-link header-link" href="contakt">Контакты</a>
             </li>
-        </ul>
-        <ul class="mobile-menu-contacts header-nav">
+          </ul>
+          <ul class="mobile-menu-contacts header-nav">
             <li class="list-contact list">
-                <a class="mobile-menu-contacts-link phone" href="tel:+380961111111" aria-label="телефон">+38 096 111 11 11</a>
+              <a class="mobile-menu-contacts-link phone"
+                href="tel:+380961111111"
+                aria-label="телефон">+38 096 111 11 11</a>
             </li>
             <li class="mobile-menu-list-contact list">
-                <a class="mobile-menu-contact-link" href="mailto:info@devstudio.com" aria-label="почта">info@devstudio.com</a>
+              <a class="mobile-menu-contact-link"
+                href="mailto:info@devstudio.com"
+                aria-label="почта">info@devstudio.com</a>
             </li>
-            
-        </ul>
-        <ul class="mobile-menu-socials">
+          </ul>
+          <ul class="mobile-menu-socials">
             <li class="mobile-menu-sotials-list">
-                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Instagram">Instagram</a>
+              <a class="mobile-menu-sotials-items"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram">Instagram</a>
             </li>
             <li class="mobile-menu-sotials-list">
-                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Twitter">Twitter</a>
+              <a class="mobile-menu-sotials-items"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter">Twitter</a>
             </li>
             <li class="mobile-menu-sotials-list">
-                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="Facebook">Facebook</a>
+              <a class="mobile-menu-sotials-items"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook">Facebook</a>
             </li>
             <li class="mobile-menu-sotials-list">
-                <a class="mobile-menu-sotials-items" href target="_blank" rel="noopener noreferer" aria-label="LinkedIn">Linkedin</a>
+              <a class="mobile-menu-sotials-items"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">Linkedin</a>
             </li>
-        </ul>
-    </div>
+          </ul>
         </div>
-    
+      </div>
     </header>
 
     <header class="header">
-        <div class="container top">
-            <nav class="navilist">
-                <a class="logo" href="index.html"><span>Web</span>Studio</a>
-                <ul class="list-a">
-                    <li class="list"><a class="header-link" href="index.html">Студия</a></li>
-                    <li class="list"><a class="current header-link" href="portfolio.html">Портфолио</a></li>
-                    <li class="list"><a class="header-link" href="contakt">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="header-nav">
-                <li class="list-contact list"><a class="contact-link" href="mailto:info@devstudio.com"><svg class="icon"
-                            width="16" height="12">
-                            <use xlink:href="./imeges/icons.svg#icon-emeill"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="list-contact list"><a class="contact-link" href="tel:+380961111111"><svg class="icon" width="16"
-                            height="12">
-                            <use xlink:href="./imeges/icons.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
-    
-        </div>
+      <div class="container top">
+        <nav class="navilist">
+          <a class="logo" href="index.html"><span>Web</span>Studio</a>
+          <ul class="list-a">
+            <li class="list">
+              <a class="header-link" href="index.html">Студия</a>
+            </li>
+            <li class="list">
+              <a class="current header-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="list">
+              <a class="header-link" href="contakt">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-nav">
+          <li class="list-contact list">
+            <a class="contact-link" href="mailto:info@devstudio.com">
+              <svg class="icon" width="16" height="12">
+                <use xlink:href="./imeges/icons.svg#icon-emeill"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li class="list-contact list">
+            <a class="contact-link" href="tel:+380961111111">
+              <svg class="icon" width="10" height="16">
+                <use xlink:href="./imeges/icons.svg#icon-phone"></use>
+                </svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-        <section class=" portfolio">
-            <div class="container">
-            <h1 class="portfolio-list" hidden>Портфолио</h1>
-            <ul class="group">
-                <li>
-                    <button class="portfolio-button text" type="button">Все</button>
-                </li>
-                <li>
-                    <button class="button-list" type="button">Веб-сайты</button>
-                </li>
-                <li>
-                    <button class="button-list-a" type="button">Приложения</button>
-                </li>
-                <li>
-                    <button class="button-list-b" type="button">Дизайн</button>
-                </li>
-                <li>
-                    <button class="button-list-c" type="button">Маркетинг</button>
-                </li>
-            </ul>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="portfolio-list" hidden>Портфолио</h1>
+          <ul class="group">
+            <li>
+              <button class="portfolio-button text" type="button">Все</button>
+            </li>
+            <li>
+              <button class="button-list" type="button">Веб-сайты</button>
+            </li>
+            <li>
+              <button class="button-list-a" type="button">Приложения</button>
+            </li>
+            <li>
+              <button class="button-list-b" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="button-list-c" type="button">Маркетинг</button>
+            </li>
+          </ul>
 
-        <ul class="portfolio-projekt card-set">
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--0.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-0.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-0.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-0.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-0.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-0.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--0.jpg" 
-                            alt="Екран ноутбука" width="450" height="294">
-                        </picture>
-                            
-                    <div class="portfolio-overlay">
-                        <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-                        исчерпывающие сведения о компании или частном лице.</p>
-                        </div>
-                        
-                    
-                    </div>
-                        <div class="team-card">
-                        <h2 class="portfolio-title">Технокряк</h2>
-                        <p class="teksting">Веб-сайт</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--1.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-1.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-1.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-1.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-1.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-1.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--1.jpg" 
-                            alt="Игра в мяч" width="450" height="294">
-                        </picture>
-                            
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        
-                        </div>
-                        </div>
-                        
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Постер New Orlean vs Golden Star</h2>
-                        <p class="teksting">Дизайн</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--2.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-2.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-2.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-2.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-2.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s@-2x-2.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--2.jpg" 
-                            alt="Реклама" width="450" height="294">
-                        </picture>
-                            
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        </div>
-                        
-                        
-                        </div>
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Ресторан Seafood</h2>
-                        <p class="teksting">Приложение</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--3.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-3.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-3.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-3.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-3.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-3.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--3.jpg" 
-                            alt="Наушники" width="450" height="294">
-                            </picture>
-                            
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        
-                        </div>
-                        </div>
-                        
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Проект Prime</h2>
-                        <p class="teksting">Маркетинг</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--4.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-4.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-4.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-4.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-4.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-4.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--4.jpg" 
-                            alt="Коробки" width="450" height="294">
-                        </picture>
-                        
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        
-                        </div>
-                        </div>
-                        
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Проект Boxes</h2>
-                        <p class="teksting">Приложение</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--5.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-5.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-5.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-5.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-5.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-5.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--5.jpg" 
-                            alt="Монитор" width="450" height="294">
-                        </picture>
-                            
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        
-                        </div>
-                        </div>
-                        
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
-                        <p class="teksting">Веб-сайт</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--6.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-6.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-6.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-6.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-6.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-6.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--6.jpg" 
-                            alt="Книга" width="450" height="294">
-                        </picture>
-                            
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        
-                        </div>
-                        </div>
-                        
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Издание Limited Edition</h2>
-                        <p class="teksting">Дизайн</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--7.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-7.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-7.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-7.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-7.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-7.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--7.jpg" 
-                            alt="Бирка" width="450" height="294">
-                        </picture>
-                            
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        
-                        </div>
-                        </div>
-                        
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Проект LAB</h2>
-                        <p class="teksting">Маркетинг</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="team-it card-set-items">
-                    <a class="picture" href="">
-                        <div class="thumb">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                            srcset="./imeges/retina-deksctop/portfolio-deks/img-l--8.jpg 1x,
-                            ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-8.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(min-width: 768px)"
-                            srcset="./imeges/retina-tabl/portfolio-tabl/img-m-8.jpg 1x,
-                            ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-8.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <source media="(max-width: 767px)"
-                            srcset="./imeges/retina-mob/portfolio-mob/img-s-8.jpg 1x,
-                            ./imeges/retina-mob/portfolio-mob/img-s-@2x-8.jpg 2x"
-                            type="image/jpg"
-                            />
-                            <img class="imeges" src="./imeges/retina-deksctop/portfolio-deks/img-l--8.jpg" 
-                            alt="Ноутбук" width="450" height="294">
-                            </picture>
-                            
-                        <div class="portfolio-overlay">
-                            <p class="portfolio-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                        
-                        </div>
-                        </div>
-                        
-                    <div class="team-card">
-                        <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                        <p class="teksting">Приложение</p>
-                    </div>
-                    </a>
-                </li>
-            </ul>
+          <ul class="portfolio-projekt card-set">
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--0.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-0.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-0.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-0.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-0.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-0.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--0.jpg"
+                      alt="Екран ноутбука"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="team-card">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="teksting">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--1.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-1.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-1.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-1.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-1.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-1.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--1.jpg"
+                      alt="Игра в мяч"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="teksting">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--2.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-2.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-2.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-2.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-2.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s@-2x-2.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--2.jpg"
+                      alt="Реклама"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">Ресторан Seafood</h2>
+                  <p class="teksting">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--3.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-3.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-3.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-3.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="
+                        ./imeges/retina-mob/portfolio-mob/img-s-3.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-3.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--3.jpg"
+                      alt="Наушники"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">Проект Prime</h2>
+                  <p class="teksting">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--4.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-4.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-4.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-4.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-4.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-4.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--4.jpg"
+                      alt="Коробки"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">Проект Boxes</h2>
+                  <p class="teksting">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--5.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-5.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-5.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-5.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-5.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-5.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--5.jpg"
+                      alt="Монитор"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="teksting">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--6.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-6.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-6.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-6.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-6.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-6.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--6.jpg"
+                      alt="Книга"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="teksting">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--7.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-7.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-7.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-7.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-7.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-7.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--7.jpg"
+                      alt="Бирка"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">Проект LAB</h2>
+                  <p class="teksting">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-it card-set-items">
+              <a class="picture" href="">
+                <div class="thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./imeges/retina-deksctop/portfolio-deks/img-l--8.jpg 1x,
+                        ./imeges/retina-deksctop/portfolio-deks/img-l-@2x-8.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(min-width: 768px)"
+                      srcset="./imeges/retina-tabl/portfolio-tabl/img-m-8.jpg 1x,
+                        ./imeges/retina-tabl/portfolio-tabl/img-m-@2x-8.jpg 2x"
+                      type="image/jpg"/>
+                    <source media="(max-width: 767px)"
+                      srcset="./imeges/retina-mob/portfolio-mob/img-s-8.jpg 1x,
+                        ./imeges/retina-mob/portfolio-mob/img-s-@2x-8.jpg 2x"
+                      type="image/jpg"/>
+                    <img class="imeges"
+                      src="./imeges/retina-deksctop/portfolio-deks/img-l--8.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"/>
+                  </picture>
+
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-desc">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-card">
+                  <h2 class="portfolio-title" lang="en">Growing Business</h2>
+                  <p class="teksting">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-        </section>
-        
+      </section>
     </main>
     <!--Секция Footer-->
     <footer class="footer">
-        <div class="container line">
-            <div class="fot">
-                <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
-    
-                <address class="foott">
-                    <ul class="footer-list">
-                        <li class="addres"><a class="footer-addres foot" href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
-                                target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="addres">
-                            <a class="contakt-link foot" href="mailto:info@example.com">info@example.com</a>
-                        </li>
-                        <li class="addres">
-                            <a class="contakt-link foot" href="tel:+380991111111">+38 099 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="fotter">
-                <strong class="footer-media">присоединяйтесь</strong>
-                <ul class="media">
-                    <li class="media-list">
-                        <a class="footer-sicial" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-                            <svg class="footer-media-icon" width="20" height="20">
-                                <use xlink:href="./imeges/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="media-list">
-                        <a class="footer-sicial" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
-                            <svg class="footer-media-icon" width="20" height="20">
-                                <use xlink:href="./imeges/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="media-list">
-                        <a class="footer-sicial" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
-                            <svg class="footer-media-icon" width="20" height="20">
-                                <use xlink:href="./imeges/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="media-list">
-                        <a class="footer-sicial" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                            <svg class="footer-media-icon" width="20" height="20">
-                                <use xlink:href="./imeges/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="e-mail-input">
-                <form class="footer-form">
-                    <strong>
-                        <span class="span">Подпишитесь на рассылку</span>
-                    </strong>
-                    <div class="bg">
-                        <label for="e-meill"><input class="input-footer" type="text" id="e-meill" name="email"
-                                placeholder="E-mail"></label>
-    
-                        <button class="fot-btn" type="submit"><span class="span-btn">Подписаться
-                            <svg class="fot-icon"
-                                width="24" height="24">
-                                <use xlink:href="./imeges/icons.svg#icon-icon-send"></use>
-                            </svg></span>
-                        </button>
-                    </div>
-    
-                </form>
-            </div>
+      <div class="container line">
+        <div class="fot">
+          <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
+
+          <address class="foott">
+            <ul class="footer-list">
+              <li class="addres">
+                <a class="footer-addres foot"
+                  href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="addres">
+                <a class="contakt-link foot" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="addres">
+                <a class="contakt-link foot" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
         </div>
+        <div class="fotter">
+          <strong class="footer-media">присоединяйтесь</strong>
+          <ul class="media">
+            <li class="media-list">
+              <a class="footer-sicial"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram">
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use xlink:href="./imeges/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-list">
+              <a class="footer-sicial"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter">
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use xlink:href="./imeges/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-list">
+              <a class="footer-sicial"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook">
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use xlink:href="./imeges/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-list">
+              <a class="footer-sicial"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin">
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use xlink:href="./imeges/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="e-mail-input">
+          <strong class="span"> Подпишитесь на рассылку </strong>
+          <form class="footer-form">
+            <input class="input-footer"
+              type="email"
+              name="email"
+              placeholder="E-mail"/>
+
+            <button class="fot-btn" type="submit">
+              Подписаться
+              <svg class="fot-icon" width="24" height="24">
+                <use xlink:href="./imeges/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-</body>
-
+  </body>
 </html>

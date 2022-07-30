@@ -1,171 +1,155 @@
 // Пятнадцятий паршал
 
+.tasks {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  &__text.about-list {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0px;
+  }
 
-
-.tasks{
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 480px;
+  }
 
-
-        &__text.about-list {
-                font-family: "Roboto";
-                font-style: normal;
-                font-weight: 400;
-                line-height: 1.7;
-                margin: 0px;
-            }
-
-    @media screen and (min-width: 768px) {
-        width: 100%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-            padding-bottom: 94px;
-            @include section;
-    }
-} 
-.tasks-about{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @include section;
+  }
 }
-    
+.tasks-about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .tasks__detali.about-text {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-basis: 100%;
 
-    @media screen and (min-width: 768px) {
-        
-            flex-basis: 100%;
-            gap: 30px
+  @media screen and (min-width: 768px) {
+    flex-basis: 100%;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-content: stretch;
+  }
+}
+
+.tasks__title.title-list {
+  display: flex;
+  //   width: 450px;
+  margin-bottom: 30px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 354px;
+    &:last-child {
+      margin-right: 0px;
     }
+  }
 
-    @media screen and (min-width: 1200px){
-        flex-wrap: nowrap;
-        align-content: stretch;
-    
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    display: inline-block;
+    &:last-child {
+      margin-right: 0px;
     }
+  }
+}
 
-        
-    }
+.tasks__letter.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
 
-        .tasks__title.title-list {
-        display: flex;
-        width: 450px;
-        margin-bottom: 30px;
-        flex-direction: column;
+  height: 120px;
+  background-color: var(--grey-bg);
 
-        @media screen and (min-width: 768px) {
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            width: 354px;
-            &:last-child {
-            margin-right: 0px;
-            }
-        }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-            display: inline-block;
-            &:last-child {
-            margin-right: 0px;
-            }
-        }
-            
-        }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
 
-            .tasks__letter.feature {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 30px;
-                border-radius: 4px;
-                width: 450px;
-                height: 120px;
-                background-color: var(--grey-bg);
+.tasks__name.about-title {
+  color: var(--black-text);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
 
-                @media screen and (min-width: 768px){
-                    width: 354px;
-                }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 
-                @media screen and (min-width: 1200px) {
-                    width: 270px;
-                }
-            }
-        
-        .tasks__name.about-title {
-            color: var(--black-text);
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.7;
-            letter-spacing: 0.03em;
-            text-align: center;
-            margin-bottom: 10px;
-
-            @media screen and (min-width: 768px) {
-            text-align: left;
-            }
-
-            @media screen and (min-width: 1200px) {
-                text-align: left;
-            }
-        
-        }
-
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 
 .program {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: 768px){
-        display: none;
-    }
-} .program{
-    @media screen and (min-width: 1200px){
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.program {
+  @media screen and (min-width: 1200px) {
     display: block;
     @include section;
-    
+
     padding-top: 0;
 
-        &__meta {
-        font-family: "Roboto";
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--white);
-        }
+    &__meta {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
 
-    &__card.label{
-    overflow-x: visible;
-    bottom: 0;
-    color: var(--white);
+    &__card.label {
+      overflow-x: visible;
+      bottom: 0;
+      color: var(--white);
     }
 
     &__list {
-    position: relative;
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
+      position: relative;
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
     }
+  }
 }
-
-
-}
-    
-
-
