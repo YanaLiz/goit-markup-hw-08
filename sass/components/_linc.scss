@@ -1,65 +1,60 @@
 // Дес"ятий паршал
 
-
-
-
 .header-link {
-    color: var(--black-text);
+  color: var(--black-text);
 
-    @media screen and (min-width:768px){
-display: inline-block;
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    display: inline-block;
     align-items: center;
     color: var(--black-text);
-    }
+  }
 
-    @media screen and (min-width: 1200px) {
-        transition-property: color,
-        cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    transition-property: color, cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: var(--anim-fast);
     transition-timing-function: ease-in-out;
-    }
-    
-    
+  }
 
-&:hover,
-&:focus {
-    color: var(--blue)
-}
-
-&:last-child {
-    margin-right: 0px;
-}
-
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     color: var(--blue);
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--blue);
+  }
 }
-
+.current,
+.current.header-link:focus {
+  color: var(--blue);
 }
-
-
-
 .current.header-link::after {
+  color: var(--blue);
+  @media screen and (min-width: 768px) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(32px);
+    width: 100%;
+    height: 4px;
 
-    @media screen and (min-width:768px) {
-        content: '';
-        position: absolute;
-            bottom: 0;
-            left: 0;
-            transform: translateY(32px);
-            width: 100%;
-            height: 4px;
-        
-            display: inline-block;
-            background-color: var(--blue);
-            border-radius: 2px;
-            &:focus {
-                    color: var(--blue);
-                }
+    display: inline-block;
+    background-color: var(--blue);
+    border-radius: 2px;
+    &:focus {
+      color: var(--blue);
     }
+  }
 
-        @media screen and (min-width:1200px){
-            content: '';
+  @media screen and (min-width: 1200px) {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -72,55 +67,45 @@ display: inline-block;
     border-radius: 2px;
 
     &,
-&:hover,
-&:focus {
-    color: var(--black-text);
-    color: var(--blue);
-
-}
-        }
-    
-
-
+    &:hover,
+    &:focus {
+      color: var(--black-text);
+      color: var(--blue);
+    }
+  }
 }
 
 .contakt-link {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  /* info@devstudio.com */
+  color: var(--grey-text);
+  transition-property: color, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--anim-fast);
+  transition-timing-function: ease-in-out;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-    /* info@devstudio.com */
-    color: var(--grey-text);
-    transition-property: color,
-        cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--anim-fast);
-    transition-timing-function: ease-in-out;
-
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     color: var(--blue);
-}
+  }
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     color: var(--blue);
+  }
 }
-
-}
-
-
-
