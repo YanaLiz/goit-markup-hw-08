@@ -50,13 +50,12 @@
     margin-right: auto;
     gap: 30px;
     justify-content: center;
-    // width: 100%;
 
     @media screen and (min-width: 1200px) {
+      gap: inherit;
       flex-wrap: nowrap;
       margin-top: 50px;
       height: 92px;
-      // width: 100%;
     }
   }
 

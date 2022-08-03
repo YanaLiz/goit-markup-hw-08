@@ -121,7 +121,7 @@ address {
   height: 38px;
   left: 495px;
   margin-right: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background-color: var(--blue);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -140,6 +140,11 @@ address {
           transition-duration: var(--anim-fast);
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    margin-bottom: 0;
+  }
 }
 .portfolio-button:hover, .portfolio-button:focus {
   color: var(--white);
@@ -163,11 +168,18 @@ address {
   border: 0px;
   padding: 6px 22px;
   margin-right: 8px;
+  margin-bottom: 15px;
+  background: var(--grey-bg);
   -webkit-transition-duration: var(--anim-fast);
           transition-duration: var(--anim-fast);
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    margin-bottom: 0;
+  }
 }
 .button-list:hover, .button-list:focus {
   color: var(--white);
@@ -187,6 +199,7 @@ address {
   border: 0px;
   padding: 6px 22px;
   margin-right: 8px;
+  margin-bottom: 15px;
   background: var(--grey-bg);
   -webkit-transition-property: color, border-radius, cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow;
   transition-property: color, border-radius, cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow;
@@ -197,6 +210,11 @@ address {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .button-list-a {
+    margin-bottom: 0;
+  }
 }
 .button-list-a:hover, .button-list-a:focus {
   color: var(--white);
@@ -219,7 +237,7 @@ address {
   color: var(--black-text);
   padding: 6px 22px;
   margin-right: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   -webkit-transition-property: color, border-radius, cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow;
   transition-property: color, border-radius, cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow;
   transition-property: color, box-shadow, border-radius, cubic-bezier(0.4, 0, 0.2, 1);
@@ -229,6 +247,11 @@ address {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .button-list-b {
+    margin-bottom: 0;
+  }
 }
 .button-list-b:hover, .button-list-b:focus {
   color: var(--white);
@@ -261,6 +284,11 @@ address {
           transition-duration: var(--anim-fast);
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .button-list-c {
+    margin-bottom: 0;
+  }
 }
 .button-list-c:hover, .button-list-c:focus {
   color: var(--white);
@@ -1273,9 +1301,11 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .group {
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1862,6 +1892,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .regular__items.client-items {
+    gap: inherit;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-top: 50px;
@@ -1958,6 +1989,7 @@ address {
 .logo {
   display: none;
   font-family: "Raleway";
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -2125,7 +2157,7 @@ address {
   padding-left: 15px;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--black-text);
@@ -2388,7 +2420,7 @@ address {
   .header-block {
     padding-top: 94px;
     padding-bottom: 94px;
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -2405,10 +2437,12 @@ address {
   text-align: center;
   font-weight: 900;
   font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .block {
@@ -2438,7 +2472,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .header {
-    max-width: 1200px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     display: -webkit-box;
