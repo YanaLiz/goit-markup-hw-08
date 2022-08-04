@@ -27,7 +27,8 @@
   color: var(--black-text);
 }
 .mobile-header {
-  border-bottom: 1px solid var(--grey);
+  // border-bottom: 1px solid var(--grey);
+  width: 100%;
   max-width: 480px;
   height: 100%;
   position: relative;

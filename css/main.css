@@ -1920,8 +1920,8 @@ address {
     width: 170px;
   }
   .regular__client {
-    width: 100%;
-    height: 100%;
+    width: 170px;
+    height: 92px;
   }
   .regular__client:not(:last-child) {
     margin-right: 30px;
@@ -1939,6 +1939,11 @@ address {
   color: var(--black-text);
   margin-bottom: 50px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    width: 100%;
+  }
 }
 
 .title {
@@ -1990,6 +1995,7 @@ address {
   display: none;
   font-family: "Raleway";
   font-weight: 700;
+  font-size: 24px;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -2164,7 +2170,7 @@ address {
 }
 
 .mobile-header {
-  border-bottom: 1px solid var(--grey);
+  width: 100%;
   max-width: 480px;
   height: 100%;
   position: relative;
@@ -2466,6 +2472,7 @@ address {
 @media screen and (min-width: 768px) {
   .header {
     max-width: 768px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
